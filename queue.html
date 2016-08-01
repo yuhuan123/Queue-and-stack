@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8">
+<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		//创建一个数组来模拟队列
+		var a = new Array();
+		console.log(a);
+		//unshift: 在数组的开头添加一个或更多元素，并返回新的长度
+		console.log("入队");
+		a.unshift(1);
+		console.log(a);//----->1
+		a.unshift(2);
+		console.log(a);//----->2,1
+		a.unshift(3);
+		console.log(a);//----->3,2,1
+		a.unshift(4);
+		console.log(a);//----->4,3,2,1
+		// a.shift();
+		// console.log(a);
+		console.log("出队，先进先出");
+		console.log(a);
+		//pop：从数组中把最后一个元素删除，并返回这个元素的值
+        a.pop();//----->1
+        console.log(a);
+        a.pop();//----->2
+        console.log(a);       
+        a.pop();//----->3
+        console.log(a);
+        a.pop();//----->4
+        console.log(a);
+	</script>
+</body>
+</html>
