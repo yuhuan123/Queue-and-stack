@@ -1,2 +1,2 @@
 # Queue-and-stack
-使用js数据实现数据结构中的队列和栈
+使用js数据实现数据结构中的队列和栈,Array的push与unshift方法都能给当前数组添加元素，不同的是，push是在末尾添加，而unshift则是在开头添加，从原理就可以知道，unshift的效率是较低的。原因是，它每添加一个元素，都要把现有元素往下移一个位置.如果一定要达到unshift的效果，可以借助于Array的reverse方法，Array的reverse的方法能够把一个数组反转。先把要放进数组的元素用push添加，再执行一次reverse，就达到了unshift的效果。
